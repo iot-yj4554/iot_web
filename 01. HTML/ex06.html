@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06</title>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <h2>&lt; 하이퍼링크 관련 태그 &gt;</h2>
+        </center>
+    </header>
+
+    <section>
+        <article>
+            <a href="http://www.w3.org" target="_blank">W3C 사이트(blank window)</a>
+            <p />
+            <a href="http://www.w3.org" target="_self">W3C 사이트(self window)</a>
+            <p />
+            <a href="http://www.w3.org" target="_parent">W3C 사이트(parent window)</a>
+            <p />
+            <a href="http://www.w3.org" target="_top">W3C 사이트(top window)</a>
+            <p />
+            
+            <a href="/ex05.html">ex05.html(웹서버가 접근 가능한 최상위 루트)</a>
+            <p />
+
+            <a href="http://localhost:5500/ex05.html">ex05.html(서버 컴퓨터)</a>
+            <p />
+            
+            <!-- #은 pass와 같음 (링크 나중에 넣을 것이라는 의미) -->
+            <a href="#">sub1_ex01.html(미완성)</a>
+            <p />
+            
+            <a href="./sub1/sub1_ex01.html">sub1_ex01.html</a>
+            <p />
+            
+            <!-- 이미지 안에 링크 걸기 -->
+            <a href="ex03.html">
+                <img src="image.jpeg" title= 'ex03.html로 이동' width='200'/>
+            </a>
+            <p />
+
+            <a href="ex07.html#addr">
+                ex07.html의 주소 부분으로 이동
+            </a>
+
+        </article>
+    </section>
+
+</body>
+
+</html>
