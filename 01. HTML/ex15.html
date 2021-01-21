@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex15</title>
+</head>
+<!-- 이것은 HTML5만 지원됨 / 익스플로러는 이것을 지원하지 않음 -->
+
+<body>
+
+    <form action="">
+        <h3>오늘 날짜 입력</h3>
+        Today : <input type="date" name="today">
+
+        <h3>프로젝트 수행 기간</h3>
+        From : <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+        To : <input type="date" name="to" min="2018-03-01" max="2018-06-30">
+
+        <p></p>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+    
+    <form action="">
+        <h3>생일(년/월) 입력</h3>
+        생일 : <input type="month" name="birth">
+        
+        <h3>주간 계획(년/주) 입력</h3>
+        주간 계획 : <input type="week" name="weekend">
+        
+        <p></p>
+        
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        
+    </form>
+    
+    <form action="">
+        <h3>0~100 범위에서 원하는 지점을 선택하세요.</h3>
+        <input type="range" name="point" min="0" max="100">
+
+        <p></p>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+
+    </form>
+
+</body>
+
+</html>

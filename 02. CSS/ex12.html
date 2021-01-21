@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+    <style>
+        .content {
+            width: 600px;
+            margin: 16px auto;
+            background-color: lightblue;
+        }
+
+        .br {
+            background-color: teal;
+            color: aqua;
+            border-style: dashed;
+            border-width: 5px;
+            border-color: red;
+            border-radius: 5px 15px 25px 35px;
+        }
+
+        body {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        .boxshadow1 {
+            background-color: yellow;
+            border: 5px solid blue;
+            box-shadow: 10px 10px 0px teal;
+        }
+
+        .boxshadow2 {
+            background-color: orange;
+            border: 5px solid red;
+            box-shadow: 20px 20px 50px red;
+        }
+
+        .boxshadow3 {
+            background-color: silver;
+            border: 5px solid black;
+            box-shadow: 20px 20px 30px -20px maroon;
+        }
+
+        .boxshadow4 {
+            background-color: lime;
+            border: 5px solid olive;
+            box-shadow: 10px 10px 0px 10px fuchsia inset;
+        }
+
+        img {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .shadow1 {
+            /* Bottom right coner */
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .shadow2 {
+            /* Up right coner */
+            box-shadow: 5px -5px 10px #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        내용을 중앙에...
+    </div>
+
+    <h1 class="br">둥근 모서리 스타일링</h1>
+    <br>
+    <h1 class="boxshadow1">박스 그림자 스타일링 예제 1</h1>
+    <h1 class="boxshadow2">박스 그림자 스타일링 예제 2</h1>
+    <h1 class="boxshadow3">박스 그림자 스타일링 예제 3</h1>
+    <h1 class="boxshadow4">박스 그림자 스타일링 예제 4</h1>
+    <br>
+    <img src="star.jpg" width="20%" class="shadow1">
+    <img src="bird.jpg" width="20%" class="shadow2">
+
+</body>
+
+</html>

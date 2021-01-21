@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+    <style>
+        div ul {color: red;}
+        div h2 {color: yellow; background-color: purple;}
+        
+        body > div > h3 {color: red;}
+        body > p {color: green; background-color: yellow;}
+        body > h3 > tel > home {color: blue;}
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Descendant Selector_1</h2>
+        <ul>
+            후손 선택자
+            <li>자식의 자식 (후손1)</li>
+            <li>자식의 자식 (후손2)</li>
+        </ul>
+    </div>
+
+    <h2>Descendant Selector_2</h2>
+    
+    <br><br>
+
+    <div>
+        <h3>Child Selector_1</h3>
+    </div>
+
+    <p>자식 선택자</p>
+
+    <h3>
+        <sno>123456</sno><br>
+        <std>홍민성</std><br>
+        <tel>
+            <office>02-4567-1010</office><br>
+            <home>010-1234-5678</home><br>
+        </tel>
+    </h3>
+
+
+</body>
+
+</html>

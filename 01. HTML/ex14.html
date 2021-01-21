@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex14</title>
+</head>
+
+<body>
+
+    <form action="">
+        이름 : <input type="text" name="name">
+
+        <h3>당신의 성별은 무엇입니까?</h3>
+        <input type="radio" name="sex" value="male" checked>남자
+        <input type="radio" name="sex" value="female">여자
+        <!-- checked 는 property / 처음에 이미 선택되어 표시됨 -->
+
+        <p></p>
+
+        <h3>당신은 몇 학년입니까?</h3>
+        <!-- radio는 선택하지 않으면 서버에 어떠한 값도 전달되지 않음 -->
+        <input type="radio" name="year" value="1">1학년
+        <input type="radio" name="year" value="2">2학년
+        <input type="radio" name="year" value="3">3학년
+        <label><input type="radio" name="year" value="4">4학년</label>
+        <!-- 라벨로 묶으면 글자를 클릭해도 선택 가능 -->
+
+        <p></p>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        
+    </form>
+    
+    <form action="">
+        <h3>현재 관심을 가지고 있는 학습은 무엇입니까?</h3>
+        
+        <label><input type="checkbox" name="subject" value="HTML5">HTML5</label><br>
+        <label><input type="checkbox" name="subject" value="CSS">CSS3</label><br>
+        <label><input type="checkbox" name="subject" value="JavaScript">JavaScript</label><br>
+        <label><input type="checkbox" name="subject" value="Jquery">Jquery</label><br>
+        
+        <p></p>
+        
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        
+    </form>
+
+    <form action="">
+
+        <h3>Button 태그 사용</h3>
+        <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+        
+        <h3>Input 태그 사용</h3>
+        <input type="button" onclick="alert('클릭-2 사용')" value="클릭-2">
+        
+    </form>
+
+    <form action="">
+        <h3>관심있는 학습 주제 한 가지를 선택하세요.</h3>
+
+        <select name="subjects">
+            <option value="1">HTML5</option>
+            <option value="2">CSS3</option>
+            <option value="3">JavaScript</option>
+            <option value="4">Jquery</option>
+            <!-- multiple property를 사용하면 여러 개 선택 가능 (하지만 잘 안씀) -->
+        </select>
+
+        <p></p>
+        
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+        
+    </form>
+
+</body>
+
+</html>

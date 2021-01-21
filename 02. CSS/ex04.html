@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+    <style>
+        .class1{
+            color: blue;
+            background-color: yellow;
+        }
+        .class2{
+            color: red;
+            background-color: green;
+        }
+        /* h3이면서 class1인 것 */
+        h3.class1{
+            color: navy;
+            background-color: pink;
+        }
+        .big{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="class1">class1 입니다.</h1>
+    <p class="class1">class1 입니다.</p>
+
+    <h1 class="class2">class2 입니다.</h1>
+    <p class="class1 big">class2 입니다.</p>
+
+    <h3 class="class1">Element + '.' + Class Selector</h3>
+    <!-- .class보다 h3.class에 더 구체적으로 적합하므로 h3.class 적용 -->
+    <!-- 동일 레벨에서는 나중에 지정한 것이 선택됨 -->
+
+</body>
+
+</html>
