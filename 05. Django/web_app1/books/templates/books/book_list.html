@@ -1,11 +1,14 @@
 {% extends 'base_books.html' %}
 
+{# ListView의 디폴트 context 변수 object_list임 (=self.model.objects.all()) #}
+{# template의 이름은 'model명(소문자)_list' #}
+
 {% block content %}
 <h2> Book List</h2>
 <ul>
     {% for book in object_list %}
     <li>
-        <a href="#">{{ book.title }}</a>
+        <a href="{% url 'books:book_detail' book.id %}">{{ book.title }}</a>
     </li>
     {% endfor %}
 </ul>
